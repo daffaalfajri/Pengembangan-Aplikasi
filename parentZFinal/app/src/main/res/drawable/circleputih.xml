@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Warna background transparan -->
+    <solid android:color="@color/transparant" />
+    <stroke
+        android:color="@color/white"
+        android:width="2dp"
+    />
+    <!-- Sudut bulat -->
+</shape>

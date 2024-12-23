@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="anak">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#E76400</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="roundedImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="judulnamaresep">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

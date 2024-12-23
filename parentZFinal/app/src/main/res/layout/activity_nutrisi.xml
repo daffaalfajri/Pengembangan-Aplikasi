@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:fillViewport="true"
+    tools:context=".Nutrisi">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <TextView
+      android:id="@+id/makanannutrisi"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Makanan &amp; Nutrisi"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.182"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.018" />
+
+  <SearchView
+      android:id="@+id/searchMakan"
+      android:layout_width="360dp"
+      android:layout_height="30dp"
+      android:background="@drawable/ic_circlemakan"
+      android:queryBackground="@android:color/transparent"
+      android:iconifiedByDefault="false"
+      android:queryHint="Cari makanan"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.062" />
+
+  <ImageButton
+      android:id="@+id/buttonBack"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/bgbuttonclear"
+      android:clipToOutline="true"
+      android:scaleType="centerCrop"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.04"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/iconleftarrow" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/constraintLayout"
+      android:layout_width="360dp"
+      android:layout_height="300dp"
+      android:layout_marginTop="104dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.487"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+      <LinearLayout
+          android:layout_width="90dp"
+          android:layout_height="match_parent"
+          android:layout_gravity="center"
+          android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+          <ImageButton
+              android:id="@+id/btnBiji"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="4dp"
+              android:background="@drawable/ic_circlemakan"
+              android:clipToOutline="true"
+              android:scaleType="centerCrop"
+              android:src="@drawable/seed"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.533"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_chainStyle="packed" />
+
+          <TextView
+              android:id="@+id/bijibijian"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:text="Biji-bijian"
+              android:textAlignment="center"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/btnBiji"
+              app:layout_constraintVertical_bias="0.05" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+          <ImageButton
+              android:id="@+id/btnMknnOlah"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="4dp"
+              android:background="@drawable/ic_circlemakan"
+              android:clipToOutline="true"
+              android:scaleType="centerCrop"
+              android:src="@drawable/makanolah"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.533"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_chainStyle="packed" />
+
+          <TextView
+              android:id="@+id/makananolah"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Makanan Olahan"
+              android:textAlignment="center"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/btnMknnOlah"
+              app:layout_constraintVertical_bias="0.05" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+          <ImageButton
+              android:id="@+id/btnMknnRingan"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="4dp"
+              android:background="@drawable/ic_circlemakan"
+              android:clipToOutline="true"
+              android:scaleType="centerCrop"
+              android:src="@drawable/lowfood"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.533"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_chainStyle="packed" />
+
+          <TextView
+              android:id="@+id/makananringan"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Makanan Ringan"
+              android:textAlignment="center"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/btnMknnRingan"
+              app:layout_constraintVertical_bias="0.05" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="90dp"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+          <ImageButton
+              android:id="@+id/btnSayuran"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="4dp"
+              android:background="@drawable/ic_circlemakan"
+              android:clipToOutline="true"
+              android:scaleType="centerCrop"
+              android:src="@drawable/vegetable"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.533"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_chainStyle="packed" />
+
+          <TextView
+              android:id="@+id/sayurjamur"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:text="Sayuran &amp; Jamur"
+              android:textAlignment="center"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/btnSayuran"
+              app:layout_constraintVertical_bias="0.05" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+          <ImageButton
+              android:id="@+id/btnBumbu"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="4dp"
+              android:background="@drawable/ic_circlemakan"
+              android:clipToOutline="true"
+              android:scaleType="centerCrop"
+              android:src="@drawable/bumbumakan"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.533"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_chainStyle="packed" />
+
+          <TextView
+              android:id="@+id/bumbumakanan"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:text="Bumbu Makanan"
+              android:textAlignment="center"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/btnBumbu"
+              app:layout_constraintVertical_bias="0.05" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+          <ImageButton
+              android:id="@+id/btnMknnLaut"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="4dp"
+              android:background="@drawable/ic_circlemakan"
+              android:clipToOutline="true"
+              android:scaleType="centerCrop"
+              android:src="@drawable/seafood"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.533"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_chainStyle="packed" />
+
+          <TextView
+              android:id="@+id/makananlaut"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:text="Makanan Laut"
+              android:textAlignment="center"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/btnMknnLaut"
+              app:layout_constraintVertical_bias="0.05" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="90dp"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+          <ImageButton
+              android:id="@+id/btnKacang"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="4dp"
+              android:background="@drawable/ic_circlemakan"
+              android:clipToOutline="true"
+              android:scaleType="centerCrop"
+              android:src="@drawable/peanuts"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.533"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_chainStyle="packed" />
+
+          <TextView
+              android:id="@+id/Kacangan"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:text="Kacang - Kacangan"
+              android:textAlignment="center"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/btnKacang"
+              app:layout_constraintVertical_bias="0.05" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+          <ImageButton
+              android:id="@+id/btnSuplemen"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="4dp"
+              android:background="@drawable/ic_circlemakan"
+              android:clipToOutline="true"
+              android:scaleType="centerCrop"
+              android:src="@drawable/suplement"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.533"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_chainStyle="packed" />
+
+          <TextView
+              android:id="@+id/suplemen"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:text="Suplemen/ Obat-obatan"
+              android:textAlignment="center"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/btnSuplemen"
+              app:layout_constraintVertical_bias="0.05" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+          <ImageButton
+              android:id="@+id/btnMinuman"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="4dp"
+              android:background="@drawable/ic_circlemakan"
+              android:clipToOutline="true"
+              android:scaleType="centerCrop"
+              android:src="@drawable/drink"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.533"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_chainStyle="packed" />
+
+          <TextView
+              android:id="@+id/minuman"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:text="Minuman"
+              android:textAlignment="center"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/btnMinuman"
+              app:layout_constraintVertical_bias="0.05" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="90dp"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+          <ImageButton
+              android:id="@+id/btnOlahKacang"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="4dp"
+              android:background="@drawable/ic_circlemakan"
+              android:clipToOutline="true"
+              android:scaleType="centerCrop"
+              android:src="@drawable/olahan"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.533"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_chainStyle="packed" />
+
+          <TextView
+              android:id="@+id/olahankacang"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:text="Olahan Kacang"
+              android:textAlignment="center"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/btnOlahKacang"
+              app:layout_constraintVertical_bias="0.05" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+          <ImageButton
+              android:id="@+id/btnBuah"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="4dp"
+              android:background="@drawable/ic_circlemakan"
+              android:clipToOutline="true"
+              android:scaleType="centerCrop"
+              android:src="@drawable/fruits"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.533"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_chainStyle="packed" />
+
+          <TextView
+              android:id="@+id/buahbuahan"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:text="Buah-buahan"
+              android:textAlignment="center"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/btnBuah"
+              app:layout_constraintVertical_bias="0.05" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+          <ImageButton
+              android:id="@+id/btnDaging"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="4dp"
+              android:background="@drawable/ic_circlemakan"
+              android:clipToOutline="true"
+              android:scaleType="centerCrop"
+              android:src="@drawable/beef"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.533"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_chainStyle="packed" />
+
+          <TextView
+              android:id="@+id/dagingprotein"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:text="Daging &amp; Protein"
+              android:textAlignment="center"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/btnDaging"
+              app:layout_constraintVertical_bias="0.05" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <TextView
+      android:id="@+id/textResep"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="Resep"
+      android:textAlignment="center"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.07"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+  <TextView
+      android:id="@+id/btnSemua"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Semua"
+      android:textSize="12sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.903"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rvResepNutrisi"
+      android:layout_width="360dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.49"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

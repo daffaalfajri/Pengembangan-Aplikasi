@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:fillViewport="true"
+    tools:context=".KategoriKonsultasi">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/buttonBack"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bgbuttonclear"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/iconleftarrow" />
+
+        <TextView
+            android:id="@+id/tvKonsultasi"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="14dp"
+            android:text="Konsultasi"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.003"
+            app:layout_constraintStart_toEndOf="@+id/buttonBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:queryHint="Cari keluhan"
+            android:queryBackground="@android:color/transparent"
+            android:background="@drawable/ic_boxresep"
+            android:iconifiedByDefault="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvKategoriKonsultasi"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

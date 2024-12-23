@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">parentZFinal</string>
+    <string name="anak">Anak</string>
+    <string name="namaBayi">Ahmad Mujahidin</string>
+    <string name="login">LOGIN</string>
+    <string name="register">Register</string>
+
+    <string-array name="nama_makanan">
+        <item>Nasi Goreng</item>
+        <item>Sate Ayam</item>
+        <item>Bakso</item>
+        <item>Mie Ayam</item>
+        <item>Nasi Padang</item>
+    </string-array>
+
+    <string-array name="deskripsi_makanan">
+        <item>Nasi goreng spesial dengan telur dan ayam.</item>
+        <item>Sate ayam dengan bumbu kacang.</item>
+        <item>Bakso sapi dengan kuah gurih.</item>
+        <item>Mie ayam dengan pangsit.</item>
+        <item>Nasi bungkus dengan menu banyak dari Padang</item>
+    </string-array>
+
+    <string-array name="gambar_makanan">
+        <item>@drawable/imgnasigoreng</item>
+        <item>@drawable/imgsateayam</item>
+        <item>@drawable/imgbakso</item>
+        <item>@drawable/imgmieayam</item>
+        <item>@drawable/imgnasipadang</item>
+    </string-array>
+
+    <string-array name="nama_keluhan">
+        <item>Tidak bisa berjalan</item>
+        <item>Tidak bisa menulis</item>
+        <item>Sistem motorik kurang</item>
+        <item>Anak muntah setelah makan</item>
+        <item>Anak saya sulit BAB</item>
+    </string-array>
+
+    <string-array name="deskripsi_keluhan">
+        <item>Anak saya sudah berumur 3 tahun namun belum bisa berjalan.</item>
+        <item>Anak saya sudah diajarkan namun belum bisa menulis.</item>
+        <item>Anak saya sudah diajarkan untuk berkembang sistem motoriknya namun belum juga.</item>
+        <item>Anak saya muntah setelah habis makan. Apakah mungkin disebabkan oleh kekenyangan?</item>
+        <item>Anak saya kesulitan dalam BAB. Apakah karena saya tidak tau trik-triknya?</item>
+    </string-array>
+
+    <string-array name="nutrisi_titles">
+        <item>Protein</item>
+        <item>Karbohidrat</item>
+        <item>Vitamin A</item>
+        <item>Vitamin C</item>
+        <item>Zat Besi</item>
+    </string-array>
+
+    <string-array name="nutrisi_descriptions">
+        <item>Sumber energi penting untuk tubuh.</item>
+        <item>Sumber tenaga dan cadangan energi.</item>
+        <item>Penting untuk kesehatan mata.</item>
+        <item>Meningkatkan daya tahan tubuh.</item>
+        <item>Berperan dalam pembentukan hemoglobin.</item>
+    </string-array>
+
+    <string-array name="nama_vaksin">
+        <item>BCG</item>
+        <item>Polio</item>
+        <item>Hepatitis B</item>
+        <item>DPT</item>
+        <item>Campak</item>
+    </string-array>
+
+    <string-array name="deskripsi_vaksin">
+        <item>Vaksin untuk mencegah tuberkulosis (TB).</item>
+        <item>Vaksin untuk melindungi dari penyakit polio.</item>
+        <item>Vaksin untuk mencegah infeksi hepatitis B.</item>
+        <item>Vaksin untuk melindungi dari difteri, pertusis, dan tetanus.</item>
+        <item>Vaksin untuk mencegah penyakit campak.</item>
+    </string-array>
+
+
+    <string-array name="judul_artikel">
+        <item>Artikel 1</item>
+        <item>Artikel 2</item>
+        <item>Artikel 3</item>
+    </string-array>
+
+    <string-array name="sumber_artikel">
+        <item>www.example1.com</item>
+        <item>www.example2.com</item>
+        <item>www.example3.com</item>
+    </string-array>
+
+    <string-array name="judul_komunitas">
+        <item>Komunitas 1</item>
+        <item>Komunitas 2</item>
+        <item>Komunitas 3</item>
+    </string-array>
+
+    <string-array name="deskripsi_komunitas">
+        <item>Deskripsi Komunitas 1</item>
+        <item>Deskripsi Komunitas 2</item>
+        <item>Deskripsi Komunitas 3</item>
+    </string-array>
+
+
+</resources>

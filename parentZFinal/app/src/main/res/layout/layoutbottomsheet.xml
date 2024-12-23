@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Gambar atau foto dokter -->
+    <ImageView
+        android:id="@+id/doctor_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/circleprflwhite"
+        android:clipToOutline="true"
+        app:srcCompat="@drawable/user"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nama dokter -->
+    <TextView
+        android:id="@+id/doctor_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dr. Agatha Febrina Sp.A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Spesialisasi -->
+    <TextView
+        android:id="@+id/doctor_specialty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dokter Anak"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Informasi tambahan -->
+    <TextView
+        android:id="@+id/doctor_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subspesialis: Dokter Gigi Anak \nLokasi Praktik: Yogyakarta \nLatar Belakang: Lulusan terbaik Kedokteran UII"
+        android:textSize="14sp"
+        android:gravity="start" />
+
+</LinearLayout>

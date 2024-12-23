@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KategoriNutrisi">
+
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/bgbuttonclear"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018"
+        app:srcCompat="@drawable/iconleftarrow" />
+
+    <TextView
+        android:id="@+id/tvKategoriNutrisi"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:text="Kategori"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonBack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <SearchView
+        android:id="@+id/searchMakan"
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_circlemakan"
+        android:iconifiedByDefault="false"
+        android:queryHint="Cari makanan"
+        android:queryBackground="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvKategoriNutrisi"
+        android:layout_width="380dp"
+        android:layout_height="700dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchMakan"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
